@@ -3,12 +3,12 @@ Author: Tie Hu
 Date: 2018/08/18
 Description: Python Code to Find Edge
 '''
-import cv2
-import PyQt5
-import numpy as np
-from matplotlib import pyplot as plt
+import cv2 # import opencv 
+import PyQt5 # import PyQt 
+import numpy as np # import numpy
+from matplotlib import pyplot as plt # import matplotlib
 
-img =cv2.imread('IMG_Street.jpg')
+img =cv2.imread('IMG_Street.jpg') 
 cv2.namedWindow('image',cv2.WINDOW_NORMAL)
 cv2.imshow('image',img)
 px = img[100,100]
