@@ -18,6 +18,7 @@ print (img.dtype)
 print (img.size)
 plate = img[280:340,330:390]
 img[273:333,100:160] = plate
+blur = cv2.blur(img,(5,5))
 cv2.imwrite('street.png',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
